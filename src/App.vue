@@ -9,6 +9,8 @@ import "@devecorsoft/devecorui/dist/style.css";
     <el-header>
       <de-header :items="[]" title="tinyoauth" />
     </el-header>
+    <el-main>
+      <RouterView />
+    </el-main>
   </el-container>
-  <RouterView />
 </template>
