@@ -1,16 +1,14 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from "vue-router";
+import { DeHeader } from "@devecorsoft/devecorui";
+import "@devecorsoft/devecorui/dist/style.css";
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
+  <el-container>
+    <el-header>
+      <de-header :items="[]" title="tinyoauth" />
+    </el-header>
+  </el-container>
   <RouterView />
 </template>
