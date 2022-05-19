@@ -22,6 +22,7 @@ jobs:
           node-version: '16'
 
       - name: Configure
+        if: ${{ false }}
         run: |
           sed -i '4i import axios from "axios"' src/main.js
           sed -i '5i axios.defaults.baseURL = "${{ secrets.TINYOAUTH_WEBUI_HOST }}"' src/main.js
